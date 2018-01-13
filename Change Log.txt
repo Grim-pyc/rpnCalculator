@@ -1,0 +1,58 @@
+Major version numbers signify a rewrite of the entire code.
+Minor version signify improvements / modifications to the code.
+
+
+v1 - Initial version of the RPN Calculator created in October 2017. Supports standard math operators, basic register operations, and the trigonometric functions.
+
+v2 - First major rewrite of the RPN Calculator Programs. Differences from v1:
+1) Program is logically divided into functuions that handle major aspects of the program (math operators, whitespace, etc).
+2) Much more intelligent input parsing system that is less prone to errors.
+3) Predefined function for error handling
+4) Only supports the basic math operators and number input
+The v2 version of the RPN Calculator was never finished
+
+v3 - Second major rewrite of the RPN Calculator. Differences from v2:
+1) Parsing the user input is now handled by a parser function instead of the main loop.
+2) Registers are now stored in a single list instead of four variables
+3) The main loop is no longer in a function
+The v3 version of the RPN Calculator was never finished and does not work properly. 
+
+v4 - Third major rewrite of the RPN Calculator. Differnces from v3:
+1) Massively improved and flexible program structure. 
+2) The parser function directly and indirectly calls nine separate functions for different "cases". 
+3) Current supported cases includes commands, math operators, bitwise operators, trigonometry operators, unary operators, numbers, and fractions.
+4) New cases can be added with ease.
+5) Full support for improper fraction, mixed fractions, and numbers in scientific notation. 
+Although only a proof of concept, the v4 version of the RPN Calculator is extremely superior to its predecessors. The structure of the program itself--heavily compartmentalized into specific, but flexible functions--will allow the program to grow from a number parser into a full-fledged calculator. Even at this early time, the capabilities of the parser exceed anything that had been previously made.
+
+v4.1 Differences from v4.0
+1) isNumber function fixed to not recognize '' as a number
+2) Supports the numbers case and a small amount of the register commands ('' and cls)
+3) Solver function integrates parser function
+
+v4.2 MAJOR RELEASE Differences from v4.1
+1) Removed arbitrary "new" and "old" register lists. Lists are muttable objects afterall
+2) Calculator supports numbers, scientific notation, all register commands, math operators, unary operators, and trigonometric operators.
+3) Is finished and fully works, unlike v2-v4.1
+4) Compartmentalized structure will allow for easy updating and bug fixing in the future.
+5) Stability depends on the user--no error handling built in.
+
+v5.0 Cutback Version. Differences from v4.2
+1) Functions for detecting fractions removed.
+2) Functions for detecting a bitwise operator removed.
+3) Trigonometric Operators removed.
+Version 4.2 contained many features that weren't implemented efficiently or at all. These elements of code have been removed for now, but will be added back over the v5x family of the RPN Calculator
+
+v5.1 Differences from v5.0
+1) Major update to program heirarchy. Program is now divided into three modules
+2) Greatly improved number parser. Negative numbers are now detected correctly
+3) Decimal Module has been implemented to dramatically increase the precision of calculations for math operators and unary operators
+4) 128-bit Quadruple Floating Point Precision has been implemented across the board.
+This is a HUGE update! 
+
+v5.2 Differences from v5.1
+1) sto and rcl commands
+2) yeah that's pretty much it
+
+v5.3 Differences from v5.2
+1) GUI implementation

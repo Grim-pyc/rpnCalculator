@@ -1,0 +1,8 @@
+Bugs and design flaws in RPNv5:
+1) Division by zero crashes program
+2) Square root of negative number crashes the program
+3) Negative numbers are not recognized as numbers
+4) caseMathOperator is horribly implemented
+5) caseUnaryOperator is horribly implemented and is missing key functions
+6) Precision problems with floating points
+7) No error handling at all
